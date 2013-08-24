@@ -130,7 +130,6 @@
     </Compile>
     <Compile Include="TiltEffect.cs" />
     <Compile Include="TimeInformation.cs" />
-    <Compile Include="XNAFrameworkDispatcherService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -153,7 +152,6 @@
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
-    <Content Include="WideLogo.png" />
     <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml">
       <SubType>Designer</SubType>
