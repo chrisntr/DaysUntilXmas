@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94E0CDCA-F3A9-405B-95B8-A79C8C0AD919}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DaysUntilXmasAndroid</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AssemblyName>DaysUntilXmasAndroid</AssemblyName>
+    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>Full</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
+    <Reference Include="DK.Ostebaronen.Droid.ViewPagerIndicator">
+      <HintPath>..\Common\DK.Ostebaronen.Droid.ViewPagerIndicator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenSlidePageFragment.cs" />
+    <Compile Include="ScreenSlidePagerAdapter.cs" />
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Controls\AnimateDrawable.cs" />
+    <Compile Include="Controls\FontFitTextView.cs" />
+    <Compile Include="Controls\ProxyDrawable.cs" />
+    <Compile Include="Controls\SnowFallView.cs" />
+    <Compile Include="Helpers\TimeHelper.cs" />
+    <Compile Include="Helpers\TimeInformation.cs" />
+    <Compile Include="Helpers\Music.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\snowbackground.axml" />
+    <AndroidResource Include="Resources\drawable\snow_flake.png" />
+    <AndroidResource Include="Resources\layout\FragmentScreenSlidePage.axml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\menu\menu_main.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_music.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_music.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_music.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_music.png" />
+    <AndroidResource Include="Resources\drawable\snow_2.png" />
+    <AndroidResource Include="Resources\drawable\snow_3.png" />
+    <AndroidResource Include="Resources\drawable\snow_4.png" />
+    <AndroidResource Include="Resources\drawable\snow_1.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_share.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_share.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_share.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_share.png" />
+    <AndroidResource Include="Resources\Raw\Bethlehem.mp3" />
+    <AndroidResource Include="Resources\Raw\Deck_The_Halls.mp3" />
+    <AndroidResource Include="Resources\Raw\Jingle_Bells.mp3" />
+    <AndroidResource Include="Resources\Raw\Oh_Xmas.mp3" />
+    <AndroidResource Include="Resources\Raw\We_Wish_You.mp3" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Assets\fonts\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Resources\Raw\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\segoeui.ttf" />
+  </ItemGroup>
+</Project>
