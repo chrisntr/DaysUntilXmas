@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaysUntilXmasAndroid", "DaysUntilXmasAndroid\DaysUntilXmasAndroid.csproj", "{94E0CDCA-F3A9-405B-95B8-A79C8C0AD919}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaysUntilXmasAndroid.Wear", "DaysUntilXmasAndroid.Wear\DaysUntilXmasAndroid.Wear.csproj", "{CAB1D947-F9AE-4158-B57E-FEED78A01213}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +15,9 @@ Global
 		{94E0CDCA-F3A9-405B-95B8-A79C8C0AD919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94E0CDCA-F3A9-405B-95B8-A79C8C0AD919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94E0CDCA-F3A9-405B-95B8-A79C8C0AD919}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = DaysUntilXmasAndroid\DaysUntilXmasAndroid.csproj
+		{CAB1D947-F9AE-4158-B57E-FEED78A01213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB1D947-F9AE-4158-B57E-FEED78A01213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB1D947-F9AE-4158-B57E-FEED78A01213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB1D947-F9AE-4158-B57E-FEED78A01213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

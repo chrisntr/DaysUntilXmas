@@ -391,41 +391,41 @@ namespace DaysUntilXmasAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050003
-			public const int bottom = 2131034115;
+			// aapt resource value: 0x7f0d0003
+			public const int bottom = 2131558403;
 			
-			// aapt resource value: 0x7f050007
-			public const int indicator = 2131034119;
+			// aapt resource value: 0x7f0d0007
+			public const int indicator = 2131558407;
 			
-			// aapt resource value: 0x7f05000b
-			public const int menu_about = 2131034123;
+			// aapt resource value: 0x7f0d000b
+			public const int menu_about = 2131558411;
 			
-			// aapt resource value: 0x7f05000a
-			public const int menu_music = 2131034122;
+			// aapt resource value: 0x7f0d000a
+			public const int menu_music = 2131558410;
 			
-			// aapt resource value: 0x7f050009
-			public const int menu_share = 2131034121;
+			// aapt resource value: 0x7f0d0009
+			public const int menu_share = 2131558409;
 			
-			// aapt resource value: 0x7f050000
-			public const int none = 2131034112;
+			// aapt resource value: 0x7f0d0000
+			public const int none = 2131558400;
 			
-			// aapt resource value: 0x7f050008
-			public const int pager = 2131034120;
+			// aapt resource value: 0x7f0d0008
+			public const int pager = 2131558408;
 			
-			// aapt resource value: 0x7f050006
-			public const int titleDays = 2131034118;
+			// aapt resource value: 0x7f0d0006
+			public const int titleDays = 2131558406;
 			
-			// aapt resource value: 0x7f050005
-			public const int titleText = 2131034117;
+			// aapt resource value: 0x7f0d0005
+			public const int titleText = 2131558405;
 			
-			// aapt resource value: 0x7f050004
-			public const int top = 2131034116;
+			// aapt resource value: 0x7f0d0004
+			public const int top = 2131558404;
 			
-			// aapt resource value: 0x7f050001
-			public const int triangle = 2131034113;
+			// aapt resource value: 0x7f0d0001
+			public const int triangle = 2131558401;
 			
-			// aapt resource value: 0x7f050002
-			public const int underline = 2131034114;
+			// aapt resource value: 0x7f0d0002
+			public const int underline = 2131558402;
 			
 			static Id()
 			{
@@ -503,20 +503,20 @@ namespace DaysUntilXmasAndroid
 		public partial class Raw
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int Bethlehem = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int Bethlehem = 2131034112;
 			
-			// aapt resource value: 0x7f040001
-			public const int Deck_The_Halls = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int Deck_The_Halls = 2131034113;
 			
-			// aapt resource value: 0x7f040002
-			public const int Jingle_Bells = 2130968578;
+			// aapt resource value: 0x7f050002
+			public const int Jingle_Bells = 2131034114;
 			
-			// aapt resource value: 0x7f040003
-			public const int Oh_Xmas = 2130968579;
+			// aapt resource value: 0x7f050003
+			public const int Oh_Xmas = 2131034115;
 			
-			// aapt resource value: 0x7f040004
-			public const int We_Wish_You = 2130968580;
+			// aapt resource value: 0x7f050004
+			public const int We_Wish_You = 2131034116;
 			
 			static Raw()
 			{
@@ -583,6 +583,22 @@ namespace DaysUntilXmasAndroid
 			}
 			
 			private Style()
+			{
+			}
+		}
+		
+		public partial class Xml
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int wearable_app_desc = 2130968576;
+			
+			static Xml()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Xml()
 			{
 			}
 		}
