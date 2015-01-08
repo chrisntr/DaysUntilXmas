@@ -11,7 +11,6 @@ using Android.Graphics;
 using Android.Util;
 using DK.Ostebaronen.Droid.ViewPagerIndicator;
 using TimeLibrary;
-using DaysUntilChristmasAndroid;
 using Android.Media;
 using System.Text;
 using System.Linq;

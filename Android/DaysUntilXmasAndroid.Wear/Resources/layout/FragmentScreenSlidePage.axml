@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp">
+    <daysuntilxmasandroid.FontFitTextView
+        android:id="@android:id/text1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_gravity="center"
+        android:gravity="bottom|center_horizontal"
+        android:text="365" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:gravity="top|center_horizontal"
+        android:id="@+id/title"
+        android:textAllCaps="true"
+        android:text="SECONDS UNTIL XMAS" />
+</LinearLayout>

@@ -10,12 +10,13 @@ using Android.Graphics;
 
 namespace DaysUntilXmasAndroid
 {
-	public class ScreenSlidePageFragment : Android.Support.V4.App.Fragment
+	public class TimeLeftFragment : Fragment
 	{
+		private static readonly string[] Content = {"DAYS", "HOURS", "MINUTES", "SECONDS"};
 
-		public static ScreenSlidePageFragment NewInstance(int page)
+		public static TimeLeftFragment NewInstance(int page)
 		{
-			var fragment = new ScreenSlidePageFragment (page);
+			var fragment = new TimeLeftFragment (page);
 			return fragment;
 		}
 
@@ -27,23 +28,23 @@ namespace DaysUntilXmasAndroid
 		/**
 	     * The fragment's page number, which is set to the argument value for {@link #ARG_PAGE}.
 	     */
-		private int mPageNumber;
+		private int pageNumber;
 
 		readonly TimeInformation _time = new TimeInformation();
 
 		[Preserve]
-		public ScreenSlidePageFragment(int page) : base()
+		public TimeLeftFragment(int page) : base()
 		{
-			mPageNumber = page;
+			pageNumber = page;
 		}
 
 		[Preserve]
-		public ScreenSlidePageFragment() : base()
+		public TimeLeftFragment() : base()
 		{
 		}
 		
 		[Preserve]
-		public ScreenSlidePageFragment(IntPtr handle, JniHandleOwnership ownership) : base(handle, ownership)
+		public TimeLeftFragment(IntPtr handle, JniHandleOwnership ownership) : base(handle, ownership)
 		{
 		}
 
@@ -51,7 +52,7 @@ namespace DaysUntilXmasAndroid
 
 		void ConvertUnit ()
 		{
-			switch (mPageNumber) {
+			switch (pageNumber) {
 			case 0:
 				unit = _time.DaysUntil;
 				break;
@@ -72,7 +73,7 @@ namespace DaysUntilXmasAndroid
 			base.OnCreate(savedInstanceState);
 
 			if ((savedInstanceState != null) && savedInstanceState.ContainsKey(ARG_PAGE))
-				mPageNumber = savedInstanceState.GetInt(ARG_PAGE);
+				pageNumber = savedInstanceState.GetInt(ARG_PAGE);
 		}
 		private FontFitTextView textView;
 		private System.Timers.Timer timer;
@@ -92,6 +93,12 @@ namespace DaysUntilXmasAndroid
 			textView.Text = unit;
 			textView.SetTextColor (Color.White);
 			textView.Typeface = face;
+		
+			var title = rootView.FindViewById<TextView> (Resource.Id.title);
+			title.Typeface = face;
+			title.SetTextColor (Color.White);
+			title.Text = string.Format ("{0} until xmas", Content [pageNumber]);
+
 			timer = new System.Timers.Timer (1000);
 			timer.Elapsed += HandleElapsed;
 
@@ -129,7 +136,7 @@ namespace DaysUntilXmasAndroid
 		public override void OnSaveInstanceState(Bundle outState)
 		{
 			base.OnSaveInstanceState(outState);
-			outState.PutInt(ARG_PAGE, mPageNumber);
+			outState.PutInt(ARG_PAGE, pageNumber);
 		}
 
 		void PopulateTimeInformation ()

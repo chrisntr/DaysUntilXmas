@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Text;
 
-namespace DaysUntilChristmasAndroid
+namespace DaysUntilXmasAndroid
 {
 	public class TimeInformation : INotifyPropertyChanged
 	{

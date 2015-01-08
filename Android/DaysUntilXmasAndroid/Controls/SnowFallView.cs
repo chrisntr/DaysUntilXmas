@@ -14,7 +14,11 @@ namespace DaysUntilXmasAndroid
 {
 	public class SnowFallView : View
 	{
+		#if WEAR
+		private int snow_flake_count = 10;
+		#else
 		private int snow_flake_count = 50;
+		#endif
 		private List<Drawable> drawables = new List<Drawable>();
 		private int[][] coords;
 		private Drawable snow_flake, snow_flake2, snow_flake3, snow_flake4;
