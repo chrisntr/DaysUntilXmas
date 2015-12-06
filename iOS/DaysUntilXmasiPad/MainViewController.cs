@@ -446,7 +446,7 @@ namespace DaysUntilXmasiPad
 		public string GetSocialCountdownString()
 		{
 			var pageNumber = GetPageNumber ();
-			string time, unit = "";
+			string time = "", unit = "";
 			switch (pageNumber) {
 			case 0:
 				time = _time.DaysUntil;
